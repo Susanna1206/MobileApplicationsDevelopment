@@ -160,6 +160,58 @@ public class Logic
         }
     }
 
-    // TODO -- add your code here
+    public static double rectangleArea(double length, double width){//площадь прямоугольника
+        double Q;
+        Q=length*width;
+        return Q;
+    }
+
+    public static double rectanglePerimeter(double length, double width){ //периметр прямоугольника
+        double p;
+        p=2*(length+width);
+        return p;
+    }
+
+    public static double circleArea(double radius){ // площадь круга
+        double k;
+        k=Math.PI*Math.pow(radius,2.0);
+        return k;
+    }
+    public static double circleCircumference(double radius){
+        double w;
+        w=2*Math.PI*radius;
+        return w;
+    }
+    public static double rightTriangleArea(double base, double height){
+        double e;
+        e=0.5*base*height;
+        return e;
+    }
+    public static double rightTrianglePerimeter(double base, double height) {
+        double t,y,u;
+        t=Math.pow(base,2.0)+Math.pow(height,2.0);
+        y=Math.sqrt(t);
+        u=y+base+height;
+        return u;
+    }
+    public static double boxVolume(double length, double width, double depth){
+        double i;
+        i=length*width*depth;
+        return i;
+    }
+    public static double boxSurfaceArea(double length, double width, double depth){
+        double O=2*((depth*length)+(length*width)+(depth*width));
+        return O;
+    }
+    public static double sphereVolume(double radius){
+        double z;
+        z=4.0/3.0*Math.PI*Math.pow(radius,3.0);
+        return z;
+    }
+    public static double sphereSurfaceArea(double radius){
+        double x;
+        x=4.0*Math.PI*Math.pow(radius,2.0);
+        return x;
+    } // TODO -- add your code here
 
 }
